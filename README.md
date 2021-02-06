@@ -1,0 +1,1 @@
+# web development 2021 KBTU AUBAKIR ADILZHAN

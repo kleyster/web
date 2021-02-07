@@ -76,7 +76,8 @@ body{
 }
 
 .input:focus{
-	border-style: 1px;
+	outline: none;
+	border: 1px solid #4da6ff;
 }
 
 .login{

@@ -1,12 +1,23 @@
 *{
 	padding: 0;
 	margin: 0;
+	overflow: hidden;
+	text-decoration: none;
 }
 body,html{
 	background-color: white;
 }
 
 #header{
-	overflow: hidden;
 	color: black;
 }
+
+.header-ul{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+}
+
+.header-ul > li{
+	margin: 0px 5px;
+} 

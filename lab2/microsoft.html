@@ -2,14 +2,41 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="microsoft.css">
+	<style>
+			*{
+		padding: 0;
+		margin: 0;
+		overflow: hidden;
+		text-decoration: none;
+			}
+		body,html{
+			background-color: white;
+		}
+
+		#header{
+			color: black;
+		}
+
+		.header-ul{
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+		}
+
+		.header-ul > li{
+			margin: 0px 5px;
+		} 
+	</style>
 </head>
 <body>
 	<div id = "header">
-		<ul>
-			<li>
-				main
-			</li>
+		<ul class = "header-ul">
+			<li><a href="#"><img src="images/mlogo.png"></a></li>
+			<li> <a href="#">Microsoft 365</a></li>
+			<li> <a href="#">Office</a></li>
+			<li> <a href="#">Windows</a></li>
+			<li> <a href="#">Поддержка</a></li>
+
 		</ul>
 	</div>
 </body>

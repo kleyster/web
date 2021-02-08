@@ -1,0 +1,12 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	background-color: white;
+}
+
+#header{
+	overflow: hidden;
+	color: black;
+}

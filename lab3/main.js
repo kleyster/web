@@ -10,6 +10,7 @@ function createLi(){
 	while (ul.lastElementChild){
 		ul.removeChild(ul.lastElementChild);
 	}
+	console.log(ul)
 	for (var i = 0; i < lists.length; i++) {
 		var li = document.createElement("li");
 		li.className = "list";
@@ -32,12 +33,16 @@ function createLi(){
 		span.appendChild(input);
 		span.appendChild(p);
 		span.className = "span";
-		// btn.addEventListener("click",deleteLi());
+		btn.addEventListener("click",function(){
+			ul.removeChild(this.parentNode);
+			deleteLi(this.name);
+		});
 		btn.appendChild(img);
 		li.appendChild(span);
 		li.appendChild(btn);
 		append(li);
 	}
+
 }
 
 function append(li){
@@ -46,13 +51,24 @@ function append(li){
 
 
 function addLi(){
-	var s  = "option"+lists.length;
-	text = document.getElementById("task").value;
+	var s  = "option"+(lists.length+1);
+	input = document.getElementById("task");
+	text = input.value;
+	input.value = "";
 	var li  = {"text": text, "optionName" : s, "value" : false};
 	lists.push(li);
 	createLi();
 }
 
-function deleteLi(){
-	list
+function deleteLi(name){
+	var i = 0;
+	while(name != lists[i].optionName){
+		i++;
+		if(name == lists[i].optionName){
+			console.log(name);
+			console.log(lists[i].optionName);
+			lists.splice(i,i+1);
+			break;
+		}
+	}
 }

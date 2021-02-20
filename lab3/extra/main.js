@@ -2,14 +2,7 @@ var l = []
 var c = []
 var ul = document.createElement("ul");
 ul.id = "lists";
-removeBtn=document.getElementById("clear");
-removeBtn.addEventListener("click", function (){
-	console.log("clear");
-	while (ul.lastElementChild){
-		ul.removeChild(ul.lastElementChild);
-	}
-	list = []
-});
+
 
 function addLi(){
 	var input = document.getElementById("task");

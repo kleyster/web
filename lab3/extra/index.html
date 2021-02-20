@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<script type="text/javascript" src="main.js"></script>	
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		body,html{
+			width: 100%;
+			height: 100%;
+		}
+
+		#main{
+			width: 100%;
+			display: flex;
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.add{
+			margin-top: 100px;
+			width: 60%;
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.add input {
+			width:60%;
+			outline: none;
+			font-size: 15px;
+			height: 25px;
+			line-height: 20px;
+			border-radius: 3px;
+			border: 2px solid #b3b3b3;
+		}
+
+		.add button {
+			margin: 0 20px;
+			width: 40px;
+			line-height: 25px;
+			outline: none;
+			border: 1px solid #1a8cff;
+			border-radius: 5px;
+			background-color: #1a8cff;
+		}
+
+		.add button:hover{
+			cursor: pointer;
+			background-color: #0080ff;
+		}
+
+		#lists {
+			margin: 50px auto;
+			width: 50%;
+			display: flex;
+			flex-flow: column;
+			overflow: hidden;
+			border-bottom: none;
+			align-items: flex-start;
+		}
+
+		.list{
+			width: 100%;
+			display: flex;
+			flex-flow: row;
+			justify-content: space-between;
+			border: 1px solid #b3b3b3;
+			align-items: center;
+			height: 30px;
+			padding: 10px 0;
+		}
+
+		.span {
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+		}
+
+		.span> p{
+			margin-left: 10px;
+			color:black;
+			font-size: 18px;
+		}
+
+
+		.btn {
+			margin-right: 20px;
+			background-color: #ffffff;
+			outline: none;
+			border: none;
+		}
+
+		.btn:hover {
+			background-color: #f2f2f2;
+		}
+
+		.btn > img {
+			width: 20px;
+		}
+
+		.input:checked + p{ 
+			text-decoration: line-through;
+		}
+
+		#clear{
+			position: absolute;
+			bottom: 100px;
+			height: 30px;
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id= "main">
+		<div class="add">
+			<input id = "task" type="text" name="task" placeholder="New Task">
+			<button name="add" onclick= "addLi()">Add</button>		
+		</div>
+
+		<button id="clear"> Remove All</button>
+		<script type="text/javascript">
+			removeBtn=document.getElementById("clear");
+			removeBtn.addEventListener("click", function (){
+			console.log("clear");
+			while (ul.lastElementChild){
+			ul.removeChild(ul.lastElementChild);
+			}
+			list = []
+});
+		</script>
+	</div>
+</body>
+</html>

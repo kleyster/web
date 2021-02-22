@@ -1,0 +1,39 @@
+#title{
+    margin:10px auto;
+    align-self: center;
+    font-size: 25px;
+}
+
+.products{
+    margin: 50px auto;
+    align-self: center;
+    width: 30%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.products > p{
+    font-size: 18px;
+    color:black;
+}
+
+.products img {
+    height:200px;
+    width:auto;
+}
+
+.products button {
+    font-size: 20px;
+    line-height:20px;
+    
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

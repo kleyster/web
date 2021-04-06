@@ -18,7 +18,7 @@ def show_categories(request):
     categories = list(Category.objects.values())
     return JsonResponse(categories,safe=False)
 
-
+####LAB8
 def show_category(request,pid):
     try:
         category = list(Category.objects.filter(id=pid).values())
